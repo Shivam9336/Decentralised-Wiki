@@ -1,0 +1,41 @@
+import React, { useState, useContext } from "react";
+import { pubKeyData } from "../App";
+import { archiveArticle } from "./Soroban";
+
+export const ArchiveArticle = () => {
+  const [articleId, _setArticleId] = useState("");
+  const [status,    _setStatus]    = useState();
+  const pubKey = useContext(pubKeyData);
+
+  const handleArchiveArticle = async () => {
+    await archiveArticle(pubKey, Number(articleId)).then(() =>
+      _setStatus(`Article #${articleId} archived successfully!`)
+    );
+  };
+
+  return (
+    <div className="flex flex-wrap flex-col font-semibold bg-red-300 rounded-lg my-4 items-center border p-4">
+      <div className="flex-wrap bg-red-400 w-full p-2 rounded-md sm:text-2xl font-bold text-center flex justify-between gap-3 items-center">
+        Archive Article
+        <input
+          type="text"
+          className="sm:w-full p-2 rounded-md"
+          placeholder="Enter Article ID"
+          onChange={(e) => _setArticleId(e.target.value)}
+        />
+        <button
+          className="text-lg hover:bg-violet-500 bg-orange-700 rounded-md p-1 font-bold text-white"
+          onClick={handleArchiveArticle}
+        >
+          Archive
+        </button>
+      </div>
+      <div>
+        <div className="text-2xl">Status</div>
+        <div className="text-2xl bg-cyan-300 p-4 border-4 border-black">
+          {status}
+        </div>
+      </div>
+    </div>
+  );
+};
