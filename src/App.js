@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header pubKey={pubKey} setPubKey={_setPubKey} />
       <pubKeyData.Provider value={pubKey}>
-        <div className="max-w-4xl mx-auto px-6 py-8">
+        <div className="max-w-4xl mx-auto px-6 py-8 flex flex-col gap-6">
           <CreateArticle  />
           <UpdateArticle  />
           <ArchiveArticle />
