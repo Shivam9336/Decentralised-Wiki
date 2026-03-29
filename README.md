@@ -22,6 +22,24 @@
 Unlike traditional wikis (e.g., Wikipedia) where content is controlled by a centralised organisation and can be censored, taken down, or altered without community consensus, Decentralised WIKI puts content ownership directly in the hands of contributors. Every article, edit, and archival action is recorded transparently on the Stellar ledger, making the entire knowledge base auditable, tamper-resistant, and permanently accessible.
 
 ---
+## ScreenShots of this Plateform
+
+- Create Article  
+<img width="2128" height="1051" alt="Screenshot 2026-03-29 155842" src="https://github.com/user-attachments/assets/912dd600-a4c7-4e37-aa98-242181aba1c7" />
+
+- Update Article 
+<img width="2104" height="783" alt="Screenshot 2026-03-29 160011" src="https://github.com/user-attachments/assets/b4cb6db7-0503-4282-abee-389194947488" />
+
+- Archive Article 
+<img width="2157" height="632" alt="image" src="https://github.com/user-attachments/assets/0a5927b6-fcc7-481c-a7ad-438d4285c421" />
+
+- View Article 
+<img width="2159" height="1098" alt="Screenshot 2026-03-29 160335" src="https://github.com/user-attachments/assets/6aa2b020-18e0-44cf-83b8-b0135c326e0e" />
+
+- Wiki Statistics 
+<img width="2159" height="641" alt="Screenshot 2026-03-29 160403" src="https://github.com/user-attachments/assets/928a3ffd-2fe5-465c-8c03-287ece5bb3a2" />
+
+---
 
 ## Project Vision
 
